@@ -1,3 +1,5 @@
 *.jpg
 *.png
+*.glb
+*.ply
 *:Zone.Identifiernotebooks/dept_anything.ipynb
