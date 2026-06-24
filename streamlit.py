@@ -16,5 +16,5 @@ if uploaded:
         col2.metric("Inliers", f"{n_in:,}", f"{100*n_in/total:.1f}%")
         col3.metric("Outliers", f"{n_out:,}", f"-{100*n_out/total:.1f}%")
 
-        visualize_ply_file(pcd)
         display_inlier_outlier(inlier_cloud, outlier_cloud)
+        visualize_ply_file(pcd)
