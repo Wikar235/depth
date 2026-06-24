@@ -4,3 +4,5 @@
 *.ply
 *:Zone.Identifier
 *:Zone.Identifiernotebooks/dept_anything.ipynb
+
+.env
