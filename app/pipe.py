@@ -2,9 +2,11 @@ from app.model import load_model, run_model_inference
 from app.point_cloud import merge_point_clouds, merge_points_colors_to_cloud, statistical_outlier_remover
 from app.utils import save_uploaded_images
 
+model_name="depth-anything/da3-base"
+model = load_model(model_name)
 
-def run_pipeline(uploaded_files, model_name="depth-anything/da3-base", confidence_thresh=0.5, file_name="merged_pcd"):
-    model, device = load_model(model_name)
+def run_pipeline(uploaded_files, model, confidence_thresh=0.5, file_name="merged_pcd"):
+    
 
     image_paths = save_uploaded_images(uploaded_files)
 

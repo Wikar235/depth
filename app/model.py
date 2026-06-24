@@ -10,7 +10,7 @@ def load_model(model_name="depth-anything/da3-base"):
     model = model.to(device)
 
     print(f"Model loaded: {model_name} on {device}")
-    return model, device
+    return model
 
 def run_model_inference(model, image_paths,conf_thresh_percentile=50, export_dir=None):
     # Run inference
