@@ -5,8 +5,7 @@ from app.utils import save_uploaded_images
 model_name="depth-anything/da3-base"
 model = load_model(model_name)
 
-def run_pipeline(uploaded_files, model, confidence_thresh=0.5, file_name="merged_pcd"):
-    
+def run_pipeline(uploaded_files, model=model, confidence_thresh=0.5, file_name="merged_pcd"):
 
     image_paths = save_uploaded_images(uploaded_files)
 

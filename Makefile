@@ -1,4 +1,7 @@
-
+ifneq (,$(wildcard ./.env))
+    include .env
+    export
+endif
 
 stop_gcloud_instance:	
 	gcloud compute instances stop <VM_Instance_Name> - project <Project_ID> - zone <ZONE_ID>

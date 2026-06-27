@@ -4,5 +4,7 @@
 *.ply
 *:Zone.Identifier
 *:Zone.Identifiernotebooks/dept_anything.ipynb
-
+__pycache__/
 .env
+*.pyc
+*.cpython-312.pyc
